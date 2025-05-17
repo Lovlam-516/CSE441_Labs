@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chương trình tính chỉ số BMI"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhập Tên:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/editTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Nhập tên của bạn"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chiều Cao (m):"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/editChieucao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="Ví dụ: 1.75"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cân Nặng (kg):"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/editCannang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="Ví dụ: 60"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btnBMI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tính BMI"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI ="
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginTop="24dp"/>
+
+        <EditText
+            android:id="@+id/editBMI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:ems="10"
+            android:focusable="false"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chuẩn đoán:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/editChandoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="Kết quả chẩn đoán" />
+
+    </LinearLayout>
+</ScrollView>
