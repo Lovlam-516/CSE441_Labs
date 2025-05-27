@@ -17,7 +17,7 @@ public class Myservice extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
-        mymedia = MediaPlayer.create(Myservice.this,R.raw.phepmau);
+        mymedia = MediaPlayer.create(Myservice.this,R.raw.cauvong);
         mymedia.setLooping(true); //Cho phép lặp lại liên tục
     }
     //Gọi Hàm onStartCommand để khởi chạy đối tượng mà Service quản lý
