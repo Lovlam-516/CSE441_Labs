@@ -6,25 +6,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    android:padding="16dp"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/selection"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30sp"
+        android:layout_marginTop="30dp"
         android:background="#5576BE"
-        android:text="TextView"
+        android:text="Nội dung bạn đang nhập:"
         android:textColor="#040303"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:padding="12dp" />
 
     <AutoCompleteTextView
         android:id="@+id/editauto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:completionThreshold="1"
-        android:ems="10" >
-        <requestFocus/>
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:hint="Nhập 1 địa điểm"
+        android:ems="10">
+        <requestFocus />
     </AutoCompleteTextView>
 
     <MultiAutoCompleteTextView
@@ -32,5 +37,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:completionThreshold="1"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:hint="Nhập nhiều địa điểm (cách nhau bằng dấu phẩy)"
         android:ems="10" />
+
 </LinearLayout>
